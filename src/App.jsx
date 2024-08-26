@@ -16,6 +16,7 @@ export default function App() {
     <>
       <Swiper
         direction={"vertical"}
+        touchStartPreventDefault={false}
         pagination={{
           clickable: true,
         }}
