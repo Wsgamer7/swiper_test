@@ -31,7 +31,11 @@ export default function App() {
           <img src="https://previews.123rf.com/images/rglinsky/rglinsky1201/rglinsky120100188/12336990-vertical-oriented-image-of-famous-eiffel-tower-in-paris-france.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <Message />
+          <Swiper nested={true} freeMode={true} className="swiper-nested">
+            <SwiperSlide className="swiper-no-swiping">
+              <Message />
+            </SwiperSlide>
+          </Swiper>
         </SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
         <SwiperSlide>Slide 5</SwiperSlide>
@@ -46,12 +50,7 @@ export default function App() {
 function Message() {
   const arr = new Array(50).fill(0);
   return (
-    <div
-      className="message-container"
-      onScroll={(e) => {
-        e.stopPropagation();
-      }}
-    >
+    <div className="message-container swiper-no-swiping">
       {arr.map((item, i) => {
         return <div>{i}</div>;
       })}

@@ -31,6 +31,10 @@ body {
   height: 100%;
 }
 
+.swiper-nested {
+  width: auto;
+  height: auto;
+}
 .swiper-slide {
   text-align: center;
   font-size: 18px;
