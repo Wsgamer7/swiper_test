@@ -16,8 +16,7 @@ export default function App() {
     <>
       <Swiper
         direction={"vertical"}
-        nested={true} // 启用嵌套滚动
-        touchStartPreventDefault={false}
+        noSwipingClass="J_scroll"
         pagination={{
           clickable: true,
         }}
