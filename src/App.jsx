@@ -17,7 +17,7 @@ export default function App() {
       <Swiper
         direction={"vertical"}
         // noSwipingClass="J_scroll"
-        
+
         pagination={{
           clickable: true,
         }}
@@ -46,9 +46,12 @@ export default function App() {
 function Message() {
   const arr = new Array(50).fill(0);
   return (
-    <div className="message-container" onScroll={(e) {
-      e.stopPropagation();
-    }}>
+    <div
+      className="message-container"
+      onScroll={(e) => {
+        e.stopPropagation();
+      }}
+    >
       {arr.map((item, i) => {
         return <div>{i}</div>;
       })}
