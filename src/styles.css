@@ -6,7 +6,15 @@ body {
   position: relative;
   height: 100%;
 }
-
+.message-container {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  width: 40vw;
+  overflow-y: scroll;
+}
+.message {
+}
 body {
   background: #eee;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;

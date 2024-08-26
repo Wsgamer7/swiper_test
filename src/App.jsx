@@ -28,7 +28,9 @@ export default function App() {
         <SwiperSlide>
           <img src="https://previews.123rf.com/images/rglinsky/rglinsky1201/rglinsky120100188/12336990-vertical-oriented-image-of-famous-eiffel-tower-in-paris-france.jpg" />
         </SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>
+          <Message />
+        </SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
         <SwiperSlide>Slide 5</SwiperSlide>
         <SwiperSlide>Slide 6</SwiperSlide>
@@ -37,5 +39,15 @@ export default function App() {
         <SwiperSlide>Slide 9</SwiperSlide>
       </Swiper>
     </>
+  );
+}
+function Message() {
+  const arr = new Array(50).fill(0);
+  return (
+    <div className="message-container">
+      {arr.map((item, i) => {
+        return <div>{i}</div>;
+      })}
+    </div>
   );
 }
