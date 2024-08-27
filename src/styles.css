@@ -18,11 +18,6 @@ body {
 .message {
   width: 400px;
 }
-.header {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5px;
-}
 body {
   background: #eee;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -31,36 +26,43 @@ body {
   margin: 0;
   padding: 0;
 }
-.flex-fixlength {
-  flex: 0 0 100px;
-}
-.flex-growlength {
-  flex: 1 1 auto;
-}
+
 .swiper {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
+}
+.swiper-scrollbar123 {
+  min-height: 50vh;
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
-.swiper-nested {
-  width: auto;
-  height: auto;
+.swiper-container {
+  width: 100%;
+  height: 100%;
 }
 .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
-
-  /* Center slide text vertically */
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
 }
-
-.swiper-slide img {
+.swiper-container2 .swiper-slide {
+  font-size: 18px;
+  height: auto;
+  box-sizing: border-box;
   display: block;
-  width: 100%;
-  height: 80%;
-  object-fit: contain;
+  line-height: 100px;
+  background: #4390ee;
+  color: #fff;
+}
+.swiper-container2 {
+  height: 400px;
+}
+.swiper-scrollbar {
+  height: 150vh;
 }
