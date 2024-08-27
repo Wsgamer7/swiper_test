@@ -11,7 +11,7 @@
   "name": "swiper-react-vertical",
   "scripts": {
     "build": "vite build",
-    "dev": "vite",
+    "dev": "vite --host 0.0.0.0",
     "start": "vite"
   },
   "tags": [
